@@ -125,7 +125,6 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
-  activesupport (~> 3.2.9)
   coffee-rails (~> 3.2.1)
   jquery-rails
   jruby-openssl

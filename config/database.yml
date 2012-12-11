@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: benchmark_development
+  username: benchmark
+  password: benchmark
+  hostname: ubuntu-meindert
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: benchmark_test
+  username: benchmark
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: benchmark_production
+  username: benchmark
+  password:

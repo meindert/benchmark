@@ -1,0 +1,27 @@
+<h1>Listing benchmark_runs</h1>
+
+<table>
+  <tr>
+    <th>Benchmark set</th>
+    <th>Act month</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @benchmark_runs.each do |benchmark_run| %>
+  <tr>
+    <td><%= benchmark_run.benchmark_set_id %></td>
+    <td><%= benchmark_run.act_month %></td>
+    <td><%= benchmark_run.note %></td>
+    <td><%= link_to 'Show', benchmark_run %></td>
+    <td><%= link_to 'Edit', edit_benchmark_run_path(benchmark_run) %></td>
+    <td><%= link_to 'Destroy', benchmark_run, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Benchmark run', new_benchmark_run_path %>

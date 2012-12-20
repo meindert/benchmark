@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Benchmark set:</b>
+  <%= @benchmark_run.benchmark_set_id %>
+</p>
+
+<p>
+  <b>Act month:</b>
+  <%= @benchmark_run.act_month %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @benchmark_run.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_benchmark_run_path(@benchmark_run) %> |
+<%= link_to 'Back', benchmark_runs_path %>

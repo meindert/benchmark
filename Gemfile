@@ -6,8 +6,9 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'activerecord-jdbcpostgresql-adapter'
-
 gem 'jruby-openssl'
+gem 'paper_trail', '~> 2'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,6 +20,9 @@ group :assets do
   gem 'therubyrhino'
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem 'bootstrap-sass', '~> 2.2.1.1'
+  
 end
 
 gem 'jquery-rails'
@@ -27,6 +31,7 @@ gem "paperclip", "~> 3.3.1"
 
 group :development do
     gem 'railroady'
+    gem 'quiet_assets'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

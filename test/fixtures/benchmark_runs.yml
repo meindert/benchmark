@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  benchmark_set_id: 1
+  act_month: 1
+  note: MyString
+
+two:
+  benchmark_set_id: 1
+  act_month: 1
+  note: MyString

@@ -11,11 +11,11 @@ test:
   encoding: unicode
   database: benchmark_test
   username: benchmark
-  password:
+  password: benchmark
 
 production:
   adapter: postgresql
   encoding: unicode
   database: benchmark_production
   username: benchmark
-  password:
+  password: benchmark

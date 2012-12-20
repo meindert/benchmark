@@ -3,3 +3,10 @@
 
 en:
   hello: "Hello world"
+  show: "Show"
+  user_types:
+    admin: Administrator
+    group: Group
+    oem: Oem
+    dealer: Dealer
+   

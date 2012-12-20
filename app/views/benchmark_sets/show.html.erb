@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>bm_id:</b>
+  <%= @benchmark_set.bm_id %>
+</p>
+
+<p>
+  <b>name:</b>
+  <%= @benchmark_set.name %>
+</p>
+
+<p>
+  <b>percentile:</b>
+  <%= @benchmark_set.percentile %>
+</p>
+
+
+<%= link_to 'Edit', edit_benchmark_set_path(@benchmark_set) %> |
+<%= link_to 'Back', benchmark_sets_path %>

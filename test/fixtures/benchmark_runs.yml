@@ -4,8 +4,10 @@ one:
   benchmark_set_id: 1
   act_month: 1
   note: MyString
+  user_id: 1
 
 two:
   benchmark_set_id: 1
   act_month: 1
   note: MyString
+  user_id: 1

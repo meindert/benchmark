@@ -18,7 +18,7 @@ class BenchmarkSetsControllerTest < ActionController::TestCase
 
   test "should create benchmark_set" do
     assert_difference('BenchmarkSet.count') do
-      post :create, benchmark_set: { bm_id: @benchmark_set.bm_id, name: @benchmark_set.name, percentile: @benchmark_set.percentile }
+      post :create, benchmark_set: {bm_id: @benchmark_set.bm_id, name: @benchmark_set.name, percentile: @benchmark_set.percentile}
     end
 
     assert_redirected_to benchmark_set_path(assigns(:benchmark_set))
@@ -35,7 +35,7 @@ class BenchmarkSetsControllerTest < ActionController::TestCase
   end
 
   test "should update benchmark_set" do
-    put :update, id: @benchmark_set, benchmark_set: { bm_id: @benchmark_set.bm_id, name: @benchmark_set.name, percentile: @benchmark_set.percentile }
+    put :update, id: @benchmark_set, benchmark_set: {bm_id: @benchmark_set.bm_id, name: @benchmark_set.name, percentile: @benchmark_set.percentile}
     assert_redirected_to benchmark_set_path(assigns(:benchmark_set))
   end
 

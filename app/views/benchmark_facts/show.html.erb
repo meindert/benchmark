@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Benchmark run:</b>
+  <%= @benchmark_fact.benchmark_run_id %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%= @benchmark_fact.region_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @benchmark_fact.category_id %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @benchmark_fact.department_id %>
+</p>
+
+<p>
+  <b>Measure:</b>
+  <%= @benchmark_fact.measure_id %>
+</p>
+
+<p>
+  <b>Lowest value:</b>
+  <%= @benchmark_fact.lowest_value %>
+</p>
+
+<p>
+  <b>Avg value:</b>
+  <%= @benchmark_fact.avg_value %>
+</p>
+
+<p>
+  <b>Upper avg value:</b>
+  <%= @benchmark_fact.upper_avg_value %>
+</p>
+
+<p>
+  <b>Highest value:</b>
+  <%= @benchmark_fact.highest_value %>
+</p>
+
+<p>
+  <b>Median value:</b>
+  <%= @benchmark_fact.median_value %>
+</p>
+
+<p>
+  <b>Bm value:</b>
+  <%= @benchmark_fact.bm_value %>
+</p>
+
+
+<%= link_to 'Edit', edit_benchmark_fact_path(@benchmark_fact) %> |
+<%= link_to 'Back', benchmark_facts_path %>

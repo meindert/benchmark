@@ -1,0 +1,73 @@
+<%= form_for(@benchmark_fact) do |f| %>
+    <% if @benchmark_fact.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@benchmark_fact.errors.count, "error") %> prohibited this benchmark_fact from being
+            saved:</h2>
+
+          <ul>
+            <% @benchmark_fact.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :benchmark_run_id %>
+      <br/>
+      <%= f.number_field :benchmark_run_id %>
+    </div>
+    <div class="field">
+      <%= f.label :region_id %>
+      <br/>
+      <%= f.number_field :region_id %>
+    </div>
+    <div class="field">
+      <%= f.label :category_id %>
+      <br/>
+      <%= f.number_field :category_id %>
+    </div>
+    <div class="field">
+      <%= f.label :department_id %>
+      <br/>
+      <%= f.number_field :department_id %>
+    </div>
+    <div class="field">
+      <%= f.label :measure_id %>
+      <br/>
+      <%= f.number_field :measure_id %>
+    </div>
+    <div class="field">
+      <%= f.label :lowest_value %>
+      <br/>
+      <%= f.text_field :lowest_value %>
+    </div>
+    <div class="field">
+      <%= f.label :avg_value %>
+      <br/>
+      <%= f.text_field :avg_value %>
+    </div>
+    <div class="field">
+      <%= f.label :upper_avg_value %>
+      <br/>
+      <%= f.text_field :upper_avg_value %>
+    </div>
+    <div class="field">
+      <%= f.label :highest_value %>
+      <br/>
+      <%= f.text_field :highest_value %>
+    </div>
+    <div class="field">
+      <%= f.label :median_value %>
+      <br/>
+      <%= f.text_field :median_value %>
+    </div>
+    <div class="field">
+      <%= f.label :bm_value %>
+      <br/>
+      <%= f.text_field :bm_value %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

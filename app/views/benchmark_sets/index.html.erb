@@ -10,18 +10,18 @@
     <th></th>
   </tr>
 
-<% @benchmark_sets.each do |benchmark_set| %>
-  <tr>
-    <td><%= benchmark_set.bm_id %></td>
-    <td><%= benchmark_set.name %></td>
-    <td><%= benchmark_set.percentile %></td>
-    <td><%= link_to t(:show), benchmark_set %></td>
-    <td><%= link_to 'Edit', edit_benchmark_set_path(benchmark_set) %></td>
-    <td><%= link_to 'Destroy', benchmark_set, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @benchmark_sets.each do |benchmark_set| %>
+      <tr>
+        <td><%= benchmark_set.bm_id %></td>
+        <td><%= benchmark_set.name %></td>
+        <td><%= benchmark_set.percentile %></td>
+        <td><%= link_to t(:show), benchmark_set %></td>
+        <td><%= link_to 'Edit', edit_benchmark_set_path(benchmark_set) %></td>
+        <td><%= link_to 'Destroy', benchmark_set, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to 'New Benchmark set', new_benchmark_set_path %>

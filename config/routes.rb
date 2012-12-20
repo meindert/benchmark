@@ -1,8 +1,11 @@
 Benchmark::Application.routes.draw do
-  resources :users
-
-
   resources :benchmark_runs
+
+
+  resources :benchmark_facts
+
+
+  resources :users
 
 
   resources :benchmark_sets

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  benchmark_run_id: 1
+  region_id: 1
+  category_id: 1
+  department_id: 1
+  measure_id: 1
+  lowest_value: 9.99
+  avg_value: 9.99
+  upper_avg_value: 9.99
+  highest_value: 9.99
+  median_value: 9.99
+  bm_value: 9.99
+
+two:
+  benchmark_run_id: 1
+  region_id: 1
+  category_id: 1
+  department_id: 1
+  measure_id: 1
+  lowest_value: 9.99
+  avg_value: 9.99
+  upper_avg_value: 9.99
+  highest_value: 9.99
+  median_value: 9.99
+  bm_value: 9.99

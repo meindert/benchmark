@@ -18,7 +18,7 @@ class BenchmarkRunsControllerTest < ActionController::TestCase
 
   test "should create benchmark_run" do
     assert_difference('BenchmarkRun.count') do
-      post :create, benchmark_run: { act_month: @benchmark_run.act_month, benchmark_set_id: @benchmark_run.benchmark_set_id, note: @benchmark_run.note }
+      post :create, benchmark_run: {act_month: @benchmark_run.act_month, benchmark_set_id: @benchmark_run.benchmark_set_id, note: @benchmark_run.note, user_id: @benchmark_run.user_id}
     end
 
     assert_redirected_to benchmark_run_path(assigns(:benchmark_run))
@@ -35,7 +35,7 @@ class BenchmarkRunsControllerTest < ActionController::TestCase
   end
 
   test "should update benchmark_run" do
-    put :update, id: @benchmark_run, benchmark_run: { act_month: @benchmark_run.act_month, benchmark_set_id: @benchmark_run.benchmark_set_id, note: @benchmark_run.note }
+    put :update, id: @benchmark_run, benchmark_run: {act_month: @benchmark_run.act_month, benchmark_set_id: @benchmark_run.benchmark_set_id, note: @benchmark_run.note, user_id: @benchmark_run.user_id}
     assert_redirected_to benchmark_run_path(assigns(:benchmark_run))
   end
 

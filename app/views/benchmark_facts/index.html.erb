@@ -1,0 +1,43 @@
+<h1>Listing benchmark_facts</h1>
+
+<table>
+  <tr>
+    <th>Benchmark run</th>
+    <th>Region</th>
+    <th>Category</th>
+    <th>Department</th>
+    <th>Measure</th>
+    <th>Lowest value</th>
+    <th>Avg value</th>
+    <th>Upper avg value</th>
+    <th>Highest value</th>
+    <th>Median value</th>
+    <th>Bm value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @benchmark_facts.each do |benchmark_fact| %>
+      <tr>
+        <td><%= benchmark_fact.benchmark_run_id %></td>
+        <td><%= benchmark_fact.region_id %></td>
+        <td><%= benchmark_fact.category_id %></td>
+        <td><%= benchmark_fact.department_id %></td>
+        <td><%= benchmark_fact.measure_id %></td>
+        <td><%= benchmark_fact.lowest_value %></td>
+        <td><%= benchmark_fact.avg_value %></td>
+        <td><%= benchmark_fact.upper_avg_value %></td>
+        <td><%= benchmark_fact.highest_value %></td>
+        <td><%= benchmark_fact.median_value %></td>
+        <td><%= benchmark_fact.bm_value %></td>
+        <td><%= link_to 'Show', benchmark_fact %></td>
+        <td><%= link_to 'Edit', edit_benchmark_fact_path(benchmark_fact) %></td>
+        <td><%= link_to 'Destroy', benchmark_fact, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'New Benchmark fact', new_benchmark_fact_path %>

@@ -19,27 +19,27 @@
     <th></th>
   </tr>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.user_name %></td>
-    <td><%= user.first_name %></td>
-    <td><%= user.last_name %></td>
-    <td><%= user.phone %></td>
-    <td><%= user.fax %></td>
-    <td><%= user.mobile %></td>
-    <td><%= user.email %></td>
-    <td><%= user.address1 %></td>
-    <td><%= user.address2 %></td>
-    <td><%= user.address3 %></td>
-    <td><%= user.address4 %></td>
-    <td><%= user.translated_user_type %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.user_name %></td>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.fax %></td>
+        <td><%= user.mobile %></td>
+        <td><%= user.email %></td>
+        <td><%= user.address1 %></td>
+        <td><%= user.address2 %></td>
+        <td><%= user.address3 %></td>
+        <td><%= user.address4 %></td>
+        <td><%= user.translated_user_type %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to 'New User', new_user_path %>

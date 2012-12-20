@@ -4,6 +4,7 @@ class CreateBenchmarkRuns < ActiveRecord::Migration
       t.integer :benchmark_set_id
       t.integer :act_month
       t.string :note
+      t.integer :user_id
 
       t.timestamps
     end

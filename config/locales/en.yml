@@ -9,4 +9,5 @@ en:
     group: Group
     oem: Oem
     dealer: Dealer
-   
+  benchmark_run: "Import or Calculate Benchmarks"
+

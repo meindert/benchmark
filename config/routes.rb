@@ -1,14 +1,15 @@
 Benchmark::Application.routes.draw do
-  resources :benchmark_runs
+  get "static_pages/home"
 
-
-  resources :benchmark_facts
-
+  get "static_pages/help"
 
   resources :users
 
-
   resources :benchmark_sets
+
+  resources :benchmark_runs
+
+  resources :benchmark_facts
 
 
   # The priority is based upon order of creation:

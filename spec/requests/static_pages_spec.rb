@@ -7,10 +7,15 @@ describe "Static pages" do
       visit '/static_pages/home'
       page.should have_content('Import or Calculate Benchmarks')
     end
-    it "should have the right title" do
+    it "should have the right dutch title" do
+      visit '/static_pages/home?locale=nl'
+      page.should have_selector('title',
+                                :text => "Maatstaver")
+    end
+    it "should have the right english title" do
       visit '/static_pages/home'
       page.should have_selector('title',
-                                :text => "| Home")
+                                :text => "Benchmarker")
     end
   end
 

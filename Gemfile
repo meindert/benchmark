@@ -27,12 +27,21 @@ end
 
 gem 'jquery-rails'
 
-gem "paperclip", "~> 3.3.1"
+gem 'paperclip', '~> 3.3.1'
 
 group :development do
   gem 'railroady'
   gem 'quiet_assets'
 end
+
+group :development, :test do
+  gem 'rspec-rails', '2.11.0'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

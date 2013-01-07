@@ -3,6 +3,7 @@ class BenchmarkRunsController < ApplicationController
   # GET /benchmark_runs.json
   def index
     @benchmark_runs = BenchmarkRun.all
+    @benchmark_run = BenchmarkRun.new
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +81,11 @@ class BenchmarkRunsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def import
+    BenchmarkRun.import(params[:file])
+    redirect_to benchmark_runs_path, notice: "Products imported."
+  end
 end
+

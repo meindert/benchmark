@@ -9,7 +9,10 @@ Benchmark::Application.routes.draw do
 
   resources :benchmark_sets
 
-  resources :benchmark_runs
+  resources :benchmark_runs do
+    collection { post :import }
+  end
+
 
   resources :benchmark_facts
 

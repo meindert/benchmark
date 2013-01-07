@@ -8,6 +8,7 @@ gem 'rails', '3.2.9'
 gem 'activerecord-jdbcpostgresql-adapter'
 gem 'jruby-openssl'
 gem 'paper_trail', '~> 2'
+gem 'simple_form'
 
 
 # Gems used only for assets and not required

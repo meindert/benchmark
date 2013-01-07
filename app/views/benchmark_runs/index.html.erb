@@ -26,4 +26,16 @@
 
 <br/>
 
-<%= link_to 'New Benchmark run', new_benchmark_run_path %>
+<h2>Import Products</h2>
+<%= simple_form_for @benchmark_run do |f| %>
+    <%= f.association :benchmark_set %>
+    <%= f.input :act_month %>
+    <%= f.input :note, :as => :text, :input_html  => {:rows => 5, :cols => 40}   %>
+    <%= f.button :submit %>
+<% end %>
+<%= form_tag import_benchmark_runs_path, multipart: true do %>
+
+
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import" %>
+<% end %>

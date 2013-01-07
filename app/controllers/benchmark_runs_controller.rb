@@ -45,6 +45,9 @@ class BenchmarkRunsController < ApplicationController
 
     respond_to do |format|
       if @benchmark_run.save
+
+        BenchmarkRun.import(params[:file])
+        # redirect_to benchmark_runs_path, notice: "Products imported."
         format.html { redirect_to @benchmark_run, notice: 'Benchmark run was successfully created.' }
         format.json { render json: @benchmark_run, status: :created, location: @benchmark_run }
       else

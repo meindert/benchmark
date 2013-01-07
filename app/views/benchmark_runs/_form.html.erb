@@ -1,38 +1,12 @@
-<%= form_for(@benchmark_run) do |f| %>
-    <% if @benchmark_run.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@benchmark_run.errors.count, "error") %> prohibited this benchmark_run from being
-            saved:</h2>
+<%= simple_form_for @benchmark_run, :html => {:multipart => true} do |f| %>
+    <%= f.association :benchmark_set %>
+    <%= f.input :act_month, :as => :string %>
+    <%= f.input :note, :as => :text, :input_html => {:rows => 5, :cols => 40} %>
 
-          <ul>
-            <% @benchmark_run.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import" %>
 
-    <div class="field">
-      <%= f.label :benchmark_set_id %>
-      <br/>
-      <%= f.number_field :benchmark_set_id %>
-    </div>
-    <div class="field">
-      <%= f.label :act_month %>
-      <br/>
-      <%= f.number_field :act_month %>
-    </div>
-    <div class="field">
-      <%= f.label :note %>
-      <br/>
-      <%= f.text_field :note %>
-    </div>
-    <div class="field">
-      <%= f.label :user_id %>
-      <br/>
-      <%= f.number_field :user_id %>
-    </div>
-    <div class="actions">
-      <%= f.submit %>
-    </div>
+
+
 <% end %>
+

@@ -4,3 +4,6 @@
 nl:
   hello: "Hallo Wereled"
   show: "Laat zien"
+  base_title: "Maatstaver"
+  hello_wordl: "Hallo %{world}"
+

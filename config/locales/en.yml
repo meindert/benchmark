@@ -4,6 +4,8 @@
 en:
   hello: "Hello world"
   show: "Show"
+  base_title: "Benchmarker"
+  hello_wordl: "Hello %{world}"
   user_types:
     admin: Administrator
     group: Group

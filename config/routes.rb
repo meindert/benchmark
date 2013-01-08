@@ -1,4 +1,7 @@
 Benchmark::Application.routes.draw do
+  resources :benchmark_loops
+
+
   get "static_pages/home"
 
   get "static_pages/help"
